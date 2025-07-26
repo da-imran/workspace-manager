@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Initial system build
+    name: laravel-build
     runs-on: ubuntu-latest
     services:
       postgres:
