@@ -56,7 +56,7 @@
                     <p class="text-base text-gray-700 dark:text-gray-300">
                         Organize your tasks, manage your workspaces, and stay productive. <br class="hidden lg:block" />
                         <br />
-                        Please proceed to Log in to continue.
+                        Please proceed to login to continue for existing user or register for new user.
                     </p>        
                     <!-- <h1 class="mt-4 mb-1 font-medium">Let's get started</h1>
                     <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Laravel has an incredibly rich ecosystem. <br>We suggest starting with the following.</p>
