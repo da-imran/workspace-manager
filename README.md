@@ -1,6 +1,6 @@
 # 🗂️ Workspace Manager – Laravel Task Management App
 
-A simple Laravel-based task management system built as a technical assessment for a Software Engineer role.
+A simple Laravel-based task management system built as a technical assessment.
 
 ## 📌 Features
 
@@ -9,8 +9,9 @@ A simple Laravel-based task management system built as a technical assessment fo
 - ✅ Add **tasks** to workspaces with a **required deadline (date & time)**
 - 🔁 **Mark tasks** as completed or incomplete
 - ⏳ **Human-readable time**:
-  - Incomplete tasks: `3 days 2 hours remaining`
-  - Completed tasks: `2 minutes ago`, `1 day ago`, etc.
+  - Incomplete tasks: `⏳ 6 hours from now`.
+  - Completed tasks: `✅ Completed 5 hours ago`.
+  - Overdue tasks: `⚠️ Overdue (due on 3 hours ago)`.
 - 🔒 Full **access control**:
   - Users can only view, edit, or delete **their own** workspaces and tasks
 
