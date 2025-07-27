@@ -8,8 +8,8 @@ if [ ! -f .env ]; then
   cp .env.example .env
 fi
 
-echo "Generating App Key"
-php artisan key:generate --show
+# echo "Generating App Key"
+# php artisan key:generate --show
 
 php artisan config:cache
 php artisan route:cache
