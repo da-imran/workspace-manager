@@ -26,6 +26,10 @@ RUN apk add --no-cache \
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+
+RUN chmod -R 755 storage bootstrap/cache
+
 ENV APP_ENV=production
 
 EXPOSE 10000
