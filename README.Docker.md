@@ -5,8 +5,8 @@ When you're ready, start your application by running:
 
 Your application will be available at http://localhost:8000.
 
-You will need to run php artisan commnad by exec into the laravel application container:
-`docker exec -it laravel_app bash`
+You will need to run php artisan commnad by exec into the laravel application container: <br>
+`docker exec -it laravel_app bash` <br>
 `php artisan migrate`.
 
 ### PHP extensions
