@@ -34,8 +34,4 @@ ENV APP_ENV=production
 
 EXPOSE 10000
 
-# CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
-CMD ["php", "artisan", "key:generate", "--show"]
-CMD ["php", "artisan", "config:cache"]
-CMD ["php", "artisan", "route:cache"]
-CMD ["php", "artisan", "migrate"]
+CMD ["/usr/local/bin/laravel-deploy.sh"]
