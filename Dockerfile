@@ -1,5 +1,7 @@
 FROM php:8.3.6-fpm-alpine
 
+WORKDIR /var/www
+
 COPY . .
 
 # Install system dependencies
@@ -24,10 +26,8 @@ RUN apk add --no-cache \
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www
-
 ENV APP_ENV=production
 
-EXPOSE 8000
+EXPOSE 10000
 
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
