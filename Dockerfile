@@ -4,6 +4,9 @@ WORKDIR /var/www
 
 COPY . .
 
+COPY laravel-deploy.sh /usr/local/bin/laravel-deploy.sh
+RUN chmod +x /usr/local/bin/laravel-deploy.sh
+
 # Install system dependencies
 RUN apk add --no-cache \
     bash \
@@ -35,4 +38,4 @@ ENV LOG_CHANNEL stderr
 
 EXPOSE 10000
 
-CMD ["/laravel-deploy.sh"]
+CMD ["/usr/local/bin/laravel-deploy.sh"]
