@@ -27,11 +27,12 @@ RUN apk add --no-cache \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN composer install --no-interaction --no-dev --prefer-dist --optimize-autoloader
-
 RUN chmod -R 755 storage bootstrap/cache
 
 ENV APP_ENV=production
+ENV APP_DEBUG false
+ENV LOG_CHANNEL stderr
 
 EXPOSE 10000
 
-CMD ["/usr/local/bin/laravel-deploy.sh"]
+CMD ["/laravel-deploy.sh"]
