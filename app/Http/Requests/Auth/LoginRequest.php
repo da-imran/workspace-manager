@@ -47,7 +47,7 @@ class LoginRequest extends FormRequest
             RateLimiter::hit($this->throttleKey());
 
             throw ValidationException::withMessages([
-                'login' => _('Failed to login'),
+                'login' => __('Failed to login'),
             ]);
         }
 
